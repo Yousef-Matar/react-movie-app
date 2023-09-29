@@ -15,7 +15,7 @@ const MovieDetails = () => {
 			movieID = null;
 		}
 		// Api get
-		Axios.get(`http://www.omdbapi.com/?apikey=2708d1&i=${movieID}`).then(
+		Axios.get(`https://www.omdbapi.com/?apikey=2708d1&i=${movieID}`).then(
 			(response) => {
 				setMovie(response.data);
 			}

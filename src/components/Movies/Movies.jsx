@@ -15,7 +15,7 @@ const Movies = () => {
 			searchTerm = null;
 		}
 		// Api get
-		Axios.get(`http://www.omdbapi.com/?apikey=2708d1&s=${searchTerm}`).then(
+		Axios.get(`https://www.omdbapi.com/?apikey=2708d1&s=${searchTerm}`).then(
 			(response) => {
 				setMovies(response.data.Search);
 			}
